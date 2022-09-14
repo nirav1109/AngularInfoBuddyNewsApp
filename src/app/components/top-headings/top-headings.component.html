@@ -1,0 +1,12 @@
+<div class="container-fluid mt-5 bg-dark">
+    <h4>Top Heading</h4>
+    <div class="row">
+        <div *ngFor="let heading of topHeadLines" class="col-lg-3 mb-3 mt-3">
+            <div class="box">
+                <img src="{{heading.urlToImage}}" width="100%" >
+                <h5 class="mt-2 mb-2">{{heading.title}}</h5>
+                <a href="{{heading.url}}" target="_blank" class="btn btn-dark btn-sm mt-2">Read more</a>
+            </div>
+        </div>
+    </div>
+</div>
